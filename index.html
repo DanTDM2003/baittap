@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body">
+        <header>
+            <div id="header">
+                <div id="title">Bài tập 1 - 21127613</div>
+            </div>
+            
+            <nav id="head-nav">
+                <a href="#">Menu 1</a>
+                <a href="#">Menu 2</a>
+                <a href="#">Menu 3</a>
+                <a href="#">Menu 4</a>
+                <a href="#">Menu 5</a>
+            </nav>
+        </header>
+        <div id="main-section">
+            <section id="side">
+                <div class="accordion" draggable="true" ondragstart="dragStart(event)">
+                    <div class="news" id="news-1" onclick="makeVisible(this.id)">
+                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                        NEWS 01
+                        <svg class="double-arrow" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M182.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L128 109.3V402.7L86.6 361.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 402.7V109.3l41.4 41.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-96-96z"/></svg>
+                    </div>
+                    <div class="news-slug">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus excepturi voluptates ea ullam consequuntur sit maxime, exercitationem quaerat cumque dolore cupiditate nemo eos esse aspernatur quod a quae, labore ducimus!</div>
+                </div>
+                <div class="accordion" draggable="true" ondragstart="dragStart(event)">
+                    <div class="news" id="news-2" onclick="makeVisible(this.id)">
+                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                        NEWS 02
+                        <svg class="double-arrow" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M182.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L128 109.3V402.7L86.6 361.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 402.7V109.3l41.4 41.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-96-96z"/></svg>
+                    </div>
+                    <div class="news-slug">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus excepturi voluptates ea ullam consequuntur sit maxime, exercitationem quaerat cumque dolore cupiditate nemo eos esse aspernatur quod a quae, labore ducimus!</div>
+                </div>
+                <div class="accordion" draggable="true" ondragstart="dragStart(event)">
+                    <div class="news" id="news-3" onclick="makeVisible(this.id)">
+                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                        NEWS 03
+                        <svg class="double-arrow" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M182.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L128 109.3V402.7L86.6 361.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 402.7V109.3l41.4 41.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-96-96z"/></svg>
+                    </div>
+                    <div class="news-slug">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus excepturi voluptates ea ullam consequuntur sit maxime, exercitationem quaerat cumque dolore cupiditate nemo eos esse aspernatur quod a quae, labore ducimus!</div>
+                </div>
+                <div class="accordion" draggable="true" ondragstart="dragStart(event)">
+                    <div class="news" id="news-4" onclick="makeVisible(this.id)">
+                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                        NEWS 04
+                        <svg class="double-arrow" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M182.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L128 109.3V402.7L86.6 361.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 402.7V109.3l41.4 41.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-96-96z"/></svg>
+                    </div>
+                    <div class="news-slug">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus excepturi voluptates ea ullam consequuntur sit maxime, exercitationem quaerat cumque dolore cupiditate nemo eos esse aspernatur quod a quae, labore ducimus!</div>
+                </div>
+                <div class="blank"></div>
+            </section>
+            <section id="main">
+                <div id="title">ĐĂNG KÝ ĐƠN HÀNG</div>
+                <div id="form">
+                    <div>
+                        <label for="name">Họ và tên: </label>
+                        <input type="text" name="name" id="name" min="2">
+                    </div>
+                    <div>
+                        <label for="address">Địa chỉ: </label>
+                        <input type="text" name="address" id="address" min="10" max="10">
+                    </div>
+                    <div>
+                        <label for="tel">Điện thoại: </label>
+                        <input type="tel" name="tel" id="tel">
+                    </div>
+                    <div id="gender-input">
+                        <label for="gender">Giới tinh: </label>
+                        <div name="gender" id="gender">
+                            <span>
+                                <input type="radio" name="g" id="male">
+                                <label for="male" style="font-weight: normal;">Nam</label>
+                            </span>
+                            <span>
+                                <input type="radio" name="g" id="female">
+                                <label for="female" style="font-weight: normal;">Nữ</label>
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="deliver-date">Ngày giao hàng: </label>
+                        <input type="date" name="deliver-date" id="deliver-date">
+                    </div>
+                    <div>
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                </div>
+
+                <div id="product">
+                    <div id="lists">
+                        <div id="product-list" class="list">
+                            <div id="list-name">Danh sách sản phẩm</div>
+                            <div id="product-names">
+                                <div class="product-name" draggable="true">
+                                    <div style="font-size: 38px;">📱</div>
+                                    <div style="color: black">iPhone 14 Pro Max 256GB</div>
+                                    <div style="color: #fc8536">$1349</div>
+                                </div>
+                                <div class="product-name" draggable="true">
+                                    <div style="font-size: 38px;">📱</div>
+                                    <div style="color: black">iPhone 14 Pro 512GB</div>
+                                    <div style="color: #fc8536">$849</div>
+                                </div>
+                                <div class="product-name" draggable="true">
+                                    <div style="font-size: 38px;">📱</div>
+                                    <div style="color: black">Samsung S23 Ultra 256GB</div>
+                                    <div style="color: #fc8536">$1349</div>
+                                </div>
+                                <div class="product-name" draggable="true">
+                                    <div style="font-size: 38px;">📱</div>
+                                    <div style="color: black">iPad Pro M1 11" 128GB</div>
+                                    <div style="color: #fc8536">$1349</div>
+                                </div>
+                                <div class="product-name" draggable="true">
+                                    <div style="font-size: 38px;">📱</div>
+                                    <div style="color: black">iPad Pro M2 12.9" 256GB</div>
+                                    <div style="color: #fc8536">$1349</div>
+                                </div>
+                                <div class="product-name" draggable="true">
+                                    <div style="font-size: 38px;">💻</div>
+                                    <div style="color: black">iPhone 14 Pro Max 256GB</div>
+                                    <div style="color: #fc8536">$1349</div>
+                                </div>
+                                <div class="product-name" draggable="true">
+                                    <div style="font-size: 38px;">💻</div>
+                                    <div style="color: black">iPhone 14 Pro Max 256GB</div>
+                                    <div style="color: #fc8536">$1349</div>
+                                </div>
+                                <div class="product-name" draggable="true">
+                                    <div style="font-size: 38px;">💻</div>
+                                    <div style="color: black">iPhone 14 Pro Max 256GB</div>
+                                    <div style="color: #fc8536">$1349</div>
+                                </div>
+                                <div class="product-name" draggable="true">
+                                    <div style="font-size: 38px;">💻</div>
+                                    <div style="color: black">iPhone 14 Pro Max 256GB</div>
+                                    <div style="color: #fc8536">$1349</div>
+                                </div>
+                                <div class="product-name" draggable="true">
+                                    <div style="font-size: 38px;">💻</div>
+                                    <div style="color: black">iPhone 14 Pro Max 256GB</div>
+                                    <div style="color: #fc8536">$1349</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="select-list" class="list">
+                            <div id="list-name">Danh sách sản phẩm</div>
+                            <div id="product-names"></div>
+                        </div>
+                    </div>
+                    <div id="buttons">
+                        <button style="color: black;">Đăng ký</button>
+                        <button style="color: black;">Xóa hết</button>
+                    </div>
+                </div>
+                <table>
+                    <tr style="text-align: center;">
+                        <th style="width: 30%; background-color: orange; padding: 2px 4px 2px 4px;">Họ tên</th>
+                        <th style="background-color: orange; padding: 2px 4px 2px 4px;">Giới tính</th>
+                        <th style="background-color: orange; padding: 2px 4px 2px 4px;">Địa chỉ</th>
+                        <th style="background-color: orange; padding: 2px 4px 2px 4px;">Ngày giao</th>
+                        <th style="background-color: orange; padding: 2px 4px 2px 4px;">Sản phẩm</th>
+                    </tr>
+                </table>
+            </section>
+        </div>
+        
+        <footer>
+            <div id="content">
+                <div>Copyright © Hưng</div>
+                <nav id="head-nav">
+                    <a href="#">Menu 1</a>
+                    <a href="#">Menu 2</a>
+                    <a href="#">Menu 3</a>
+                    <a href="#">Menu 4</a>
+                    <a href="#">Menu 5</a>
+                </nav>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="news.js"></script>
+    <script src="product.js"></script>
+</body>
+</html>

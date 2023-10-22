@@ -1,0 +1,353 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color: aliceblue;
+    user-select: none;
+}
+
+body {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#body {
+    max-height: 100vh;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+
+#main-section {
+    display: flex;
+    background-color: white;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #4339ff;
+    
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    max-width: 100%;
+    height: 7.6rem;
+    font-size: 1rem;
+    border-bottom: 2px solid rgb(117, 110, 253);
+    padding-bottom: 30px;
+}
+
+header #header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+    height: 6rem;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, #4339ff 44%, #1da3f1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+header #header #title {
+    font-size: xx-large;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px black;
+}
+
+header #head-nav {
+    display: flex;
+    column-gap: 60px;
+    position: absolute;
+    bottom: 10px;
+    background-color: #4339ff;
+    padding: 7px 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 3px;
+}
+
+header #head-nav a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+header #head-nav a:hover {
+    color: rgb(211, 170, 248)
+}
+
+header #head-nav a:focus {
+    color: rgb(211, 170, 248)
+}
+
+#side {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 164px);
+    width: 30%;
+    border-right: 1px dotted rgb(117, 110, 253);
+    padding: 4px 6px 4px 6px;
+}
+
+.blank {
+    min-height: 50px;
+    height: 100%;
+    width: 100%;
+}
+
+.news {
+    width: 100%;
+    height: 55px;
+    background-color: #fdba8d;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+
+    transition: background-color 1s ease;
+}
+
+ .news-slug {
+    font-size: 15px;
+    color: rgb(117, 110, 253);
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    border: 1px solid rgb(211, 211, 211);
+    border-top: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 4px 8px;
+
+    transition: max-height 0.8s ease, opacity 0.8s ease-in-out;
+}
+
+.news-slug.appear {
+    opacity: 1;
+    max-height: 250px;
+}
+
+.arrow {
+    position: absolute;
+    left: 10px;
+    font-size: medium;
+    transition: transform 0.5s ease-in-out;
+}
+
+.arrow.active {
+    transform: rotate(90deg);
+}
+
+.double-arrow {
+    position: absolute;
+    right: 15px;
+    font-size: medium;
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+#main {
+    height: calc(100vh - 164px);
+    width: 70%;
+    padding: 0px 20px;
+}
+
+#main #title {
+    width: 100%;
+    text-align: center;
+    color: #fdba8d;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 15px;
+    border-bottom: 2px solid rgb(156, 156, 156);
+    margin-bottom: 10px;
+}
+
+#main #form {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 4px;
+    margin-bottom: 10px;
+}
+
+#main #form * {
+    color: black;
+    font-size: small;
+}
+
+#main #form label {
+    font-weight: bold;
+}
+
+#main #form input:not([type=radio]) {
+    width: 380px;
+}
+
+#main #form #gender-input{
+    display: flex;
+}
+
+#main #form #gender-input div {
+    margin-left: 3px;
+    width: 380px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: inline-end;
+    background-color: #fcd3b8;
+    height: 1.6rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1.5px solid #fdba8d;
+    margin-top: 10px;
+}
+
+footer #content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    font-size: small;
+}
+
+footer #content * {
+    color: #fc8536;
+}
+
+footer #content a:hover {
+    background-color: #fc8536;
+    color: white;
+}
+
+footer #content a:focus {
+    background-color: #fc8536;
+    color: white;
+}
+
+#product {
+    width: 100%;
+    height: fit-content;
+    border-bottom: 1px solid rgb(192, 192, 192);
+    padding-bottom: 10px;
+}
+
+#product #lists {
+    display: flex;
+    justify-content: space-between;
+}
+
+#product #lists #product-list {
+    height: 380px;
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+}
+
+#product #lists #product-list #list-name {
+    width: 100%;
+    height: 20px;
+    font-size: small;
+    font-weight: bold;
+    color: #fc8536;
+    text-align: end;
+    margin-bottom: 5px;
+}
+
+#product #lists #product-list #product-names {
+    height: 355px;
+    width: 100%;
+    overflow-y: scroll;
+    border: 1px solid rgb(192, 192, 192);
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 4px;
+}
+
+#product #lists #product-list #product-names .product-name {
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 4px;
+    padding: 2px 3px;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#product #lists #select-list {
+    height: 380px;
+    width: 47%;
+}
+
+#product #lists #select-list #list-name {
+    width: 100%;
+    height: 20px;
+    font-size: small;
+    font-weight: bold;
+    color: #fc8536;
+    margin-bottom: 5px;
+}
+
+#product #lists #select-list #product-names {
+    height: 355px;
+    width: 100%;
+    overflow-y: scroll;
+    border: 1px solid rgb(192, 192, 192);
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 4px;
+}
+
+#product #lists #select-list #product-names .product-name {
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 4px;
+    padding: 2px 3px;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#product #buttons {
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+#product #buttons button {
+    padding: 2px 4px 2px 4px;
+    font-weight: bold;
+}
+
+table {
+    margin-top: 5px;
+    width: 100%;
+}
+
+table * {
+    color: white;
+}
